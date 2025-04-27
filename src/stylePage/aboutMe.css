@@ -1,0 +1,92 @@
+body {
+    background-color: rgba(182, 197, 115, 0.856);
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+}
+header nav a{
+    color: rgba(19, 18, 6, 0.822);
+    font-size: 16px;
+    text-decoration-line: none;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    padding: 10px;
+}
+header nav a:hover{
+    color: #8d7f53;
+}
+#topNavigator2{
+    text-decoration-line: overline;
+}
+#hamburger{
+    /* visibility: hidden; */
+    display: none;
+    font-size: 25px;
+    cursor:pointer;
+}
+h2{
+    color: rgb(151, 91, 1);
+}
+p{
+    color: rgba(19, 18, 6, 0.822);
+    font-family: monospace;
+    font-size: 14px;
+    margin-bottom: 80px;
+}
+p span{
+    color: rgb(151, 91, 1);
+    font-weight: bold;
+}
+
+h3{
+   color: #473e12;
+   margin-top: -2px;
+}
+#degree{
+    color: rgb(151, 91, 1);
+    font-size: 18px;
+}
+#astu{
+    color: rgba(27, 26, 12, 0.993);
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.skills span{
+    color: rgb(151, 91, 1);
+    font-weight: bold;
+    margin-left: 20px;
+}
+.skills div{
+    color: rgba(19, 18, 6, 0.822);
+    margin-top: 5px;
+    margin-left: 50px;
+    margin-bottom: 15px;;
+    font-size: 14px;
+}
+.skills{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    header nav div {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 35px;
+        right:10px;
+        width: 100px;
+        background-color: rgba(182, 197, 115, 0.756);
+    }
+    header nav div.show{
+        display: flex;
+    }
+    #hamburger{
+        display: block;
+    }
+}

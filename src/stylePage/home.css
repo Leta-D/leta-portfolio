@@ -1,0 +1,196 @@
+body {
+    background-color: rgba(182, 197, 115, 0.856);
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+}
+header nav a{
+    color: rgba(19, 18, 6, 0.822);
+    font-size: 16px;
+    text-decoration-line: none;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    padding: 10px;
+}
+header nav a:hover{
+    color: #8d7f53;
+}
+#topNavigator1{
+    text-decoration-line: overline;
+}
+#hamburger{
+    /* visibility: hidden; */
+    display: none;
+    font-size: 25px;
+    cursor:pointer;
+}
+.wave{
+    margin-top: 50px;
+    margin-right: 20px;
+    justify-self: flex-end;
+}
+
+.wave span{
+    display: inline-block;
+    animation: wave 1.5s infinite;
+    animation-delay: calc(0.1s * var(--i));
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(19, 18, 6, 0.822);
+}
+
+
+    
+
+.wave span:nth-child(1) {--i: 1;}
+.wave span:nth-child(2) {--i: 2;}
+.wave span:nth-child(3) {--i: 3;}
+.wave span:nth-child(4) {--i: 4;}
+.wave span:nth-child(5) {--i: 5;}
+.wave span:nth-child(6) {--i: 6;}
+.wave span:nth-child(7) {--i: 7;}
+.wave span:nth-child(8) {--i: 8;}
+.wave span:nth-child(9) {--i: 9;}
+.wave span:nth-child(10) {--i: 10;}
+.wave span:nth-child(11) {--i: 11;}
+
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    50% {
+        color: #cf8b31;
+        transform: translateY(-2px);
+        transform: translateX(-2px);
+        /* text-decoration-line: overline; */
+        /* text-decoration-color: #dae483; */
+    }
+}
+
+.mainHome p{
+    margin-top: 95px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgba(19, 18, 6, 0.822);
+    
+}
+
+.mainHome p span{
+    font-size: 25px;
+}
+.lastSpanDiv {
+    color: rgba(19, 18, 6, 0.705);
+    margin-top: 100px;
+    /* justify-self: flex-end; */
+}
+
+.aboveHr{
+    margin-top: 100px;
+    margin-bottom: -5px;
+    justify-self: flex-end;
+    color: #8d7f53;
+    letter-spacing: 2px;
+}
+
+.projects span{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(22, 21, 7);
+}
+.imageFrame{
+    display: flex;
+    flex-direction:row;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.imageFrameL, .imageFrameR{
+    margin-top: 20px;
+    position:relative ;
+    width: 120px;
+    height: 200px;
+    background: radial-gradient(circle, #8d7f53, #8d5c53, #c05151, #8d5c53, #8d7f53);
+}
+.imageFrameM{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 250px;
+    background: radial-gradient(circle, #8d7f53, #8d5c53, #c05151, #8d5c53, #8d7f53);
+}
+
+.allFrames span{
+    margin-left: 210px;
+    margin-top: 2px;
+}
+.thaking{
+    color: #3b3212;
+    margin-bottom: 50px;
+    align-self: center;
+    justify-self: center;
+
+}
+.thaking span{
+    margin-left: 100px;
+}
+@media (max-width: 599px) {
+    .wave span{
+        font-size: 20px;
+    }
+    .allFrames{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .aboveHr{
+        letter-spacing: 0.70px;
+    }
+}
+@media (min-width: 600px) {
+    .wave span{
+        font-size: 40px;
+    }
+    .allFrames{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-bottom: 80px;
+    }
+}
+@media (min-width: 1024px) {
+    .wave span{
+        font-size: 60px;
+    }
+    .allFrames{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin-left: 20px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav div {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 35px;
+        right:10px;
+        width: 100px;
+        background-color: rgba(182, 197, 115, 0.756);
+    }
+    header nav div.show{
+        display: flex;
+    }
+    #hamburger{
+        display: block;
+    }
+}

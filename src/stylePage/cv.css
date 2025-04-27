@@ -1,0 +1,119 @@
+body {
+    background-color: rgba(182, 197, 115, 0.856);
+    font-family:'Courier New', Courier, monospace;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+}
+header nav a{
+    color: rgba(19, 18, 6, 0.822);
+    font-size: 16px;
+    text-decoration-line: none;
+    text-decoration-style: double;
+    text-decoration-thickness: 2px;
+    padding: 10px;
+}
+header nav a:hover{
+    color: #8d7f53;
+}
+#topNavigator4{
+    text-decoration-line: overline;
+}
+#hamburger{
+    /* visibility: hidden; */
+    display: none;
+    font-size: 25px;
+    cursor:pointer;
+}
+.cvDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+#myImage {
+    width: 500px;
+    height: 700px;
+    margin-top: 40px;
+    margin-left: 100px;
+    justify-self: center;
+    box-shadow: 20px 10px #867147c2;    
+}
+h2{
+    color: rgb(151, 91, 1);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.pDiv{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.pDiv p{
+    color: rgba(19, 18, 6, 0.822);
+    font-family: monospace;
+    font-size: 16px;
+}
+.pDiv button{
+    padding: 5px;
+    width: 100px;
+    margin-left: 200px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border-color: rgb(151, 91, 1);
+    background-color: #bba970;
+}
+.pDiv button:hover{
+    cursor: pointer;
+    color: #8d7f53;
+}
+.aboveHr{
+    margin-top: 60px;
+    margin-bottom: -5px;
+    justify-self: flex-end;
+    color: #8d7f53;
+    letter-spacing: 2px;
+}
+hr{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+    #myImage {
+        width: 350px;
+        height: 650px;
+        margin-left: 10px;
+        box-shadow: 10px 5px #867147c2;  
+    }
+    .pDiv{
+        margin-left: 10px;
+    }
+    .aboveHr{
+        letter-spacing: 0.70px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cvDiv{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav div {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 35px;
+        right:10px;
+        width: 100px;
+        background-color: rgba(182, 197, 115, 0.756);
+    }
+    header nav div.show{
+        display: flex;
+    }
+    #hamburger{
+        display: block;
+    }
+}
