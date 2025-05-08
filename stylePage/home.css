@@ -126,6 +126,15 @@ header nav a:hover{
     background: radial-gradient(circle, #8d7f53, #8d5c53, #c05151, #8d5c53, #8d7f53);
 }
 
+.imageFrameL img, .imageFrame img{
+    width: 120px;
+    height: 200px;
+}
+.imageFrameM img{
+    width: 150px;
+    height: 250px;
+}
+
 .allFrames span{
     margin-left: 210px;
     margin-top: 2px;
